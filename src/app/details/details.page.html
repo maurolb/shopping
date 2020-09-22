@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      DETALLE
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/" routerDirection="forward" fill="outline" shape="round">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-card>
+    <ion-card-content>
+      <ion-list lines="full">
+        <ion-item *ngIf="todo">
+          <ion-input required type="text" placeholder="Producto" [(ngModel)]="todo.product"></ion-input>
+        </ion-item>
+        <ion-item *ngIf="todo">
+          <ion-label>x</ion-label>
+          <ion-input required type="number" placeholder="Unidad" [(ngModel)]="todo.quantity"></ion-input>
+        </ion-item>
+        <ion-item *ngIf="todo">
+          <ion-label>$</ion-label>
+          <ion-input required type="number" placeholder="Precio" [(ngModel)]="todo.price"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="full" color="success" (click)="saveTodo()">Guardar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

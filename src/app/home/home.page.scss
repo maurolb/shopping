@@ -1,0 +1,27 @@
+ion-list{
+  padding: unset;
+}
+
+p{
+  font-weight: bold;
+}
+
+span{
+  color: rgb(184, 56, 56);
+}
+
+ion-title,
+ion-card-subtitle{
+  letter-spacing: 2px;
+}
+
+ion-card-subtitle{
+  margin-left: auto;
+  color: aliceblue;
+}
+
+.total{
+  font-size: 1rem;
+  letter-spacing: 0;
+  color: aqua;
+}
